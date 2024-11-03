@@ -15,6 +15,6 @@ class BlogModel(models.Model):
         ordering = ['-createdAt']
 
     def __str__(self):
-        return self.title
+        return f'{self.title} - Created At: {self.createdAt}'
     
 
