@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework import status, generics
 from .models import BlogModel
 from .serializers import BlogSerializer
-from .permissions import IsAdminOrReadOnly  # Import the custom permission
+from .permissions import IsAdminOrReadOnly
 from datetime import datetime
 
 class Blogs(generics.GenericAPIView):
